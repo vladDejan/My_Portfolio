@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaquery.css">
+</head>
+
+<body>
+    <div class="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-menu" id="nav-menu">
+        <div class="menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#first-page" class="nav-link active-link">Home</a></li>
+                <li class="nav-item"><a href="#second-page" class="nav-link active-link">My Skills</a></li>
+                <li class="nav-item"><a href="#third-page" class="nav-link active-link">My Project</a></li>
+                <li class="nav-item"><a href="#four-page" class="nav-link active-link">Rate Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="first-page" class="content">
+            <div class="countdown-container">
+                <div class="countdown-el days-c">
+                    <p class="big-text" id="days">0</p>
+                    <span>days</span>
+                </div>
+                <div class="countdown-el hours-c">
+                    <p class="big-text" id="hours">0</p>
+                    <span>hours</span>
+                </div>
+                <div class="countdown-el mins-c">
+                    <p class="big-text" id="mins">0</p>
+                    <span>mins</span>
+                </div>
+                <div class="countdown-el seconds-c">
+                    <p class="big-text" id="seconds">0</p>
+                    <span>seconds</span>
+                </div>
+            </div>
+
+            <article class="blob">
+                <div class="about-me">
+                    <div class="logo">
+                        <img src="./Images/logo.png">
+                    </div>
+                    <h1>WEB FRONT-END DEVELOPMENT</h1>
+                    <P>Specializing in custom theme development. If you're a business seeking a web presence or are
+                        looking to hire, contact me <a href="#four-page"><span id="here">here</span></a>.</P>
+                </div>
+            </article>
+        </section>
+
+        <div class="border-section">
+            <div class="border-line"></div>
+        </div>
+
+        <section id="second-page" class="second-page">
+            <div class="logo-pattern">
+                <div class="title">My Skills</div>
+            </div>
+            <div class="container-box">
+
+                <div class="html-box box">
+                    <div class="content-box">
+                        <h3 class="icon">HTML<br><span class="el">
+                                <>
+                            </span></h3>
+                        <p id="message" class="hide">The HyperText Markup Language or HTML is the standard markup
+                            language for documents designed to be displayed in a web browser. It can be assisted by
+                            technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+                    </div>
+                </div>
+
+                <div class="css-box box">
+                    <div class="content-box">
+                        <h3 class="icon">CSS<br><span class="el"># .</span></h3>
+                        <p id="message" class="hide">Cascading Style Sheets is a style sheet language used for
+                            describing the presentation of a document written in a markup language such as HTML or XML.
+                            CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+                    </div>
+                </div>
+
+                <div class="js-box box">
+                    <div class="content-box">
+                        <h3 class="icon">JAVA SCRIPT<br><span class="el">{ }</span></h3>
+                        <p id="message" class="hide">JavaScript, often abbreviated as JS, is a programming language that
+                            is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022,
+                            98% of websites use JavaScript on the client side for webpage behavior, often incorporating
+                            third-party libraries.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="third-page" class="third-page">
+            <h2 class="title">My Project</h2>
+            <div class="images">
+                <img src="./Images/slide_left.png" class="slideFromLeft">
+                <img src="./Images/slide_right.png" class="slideFromRight">
+            </div>
+        </section>
+
+        <section id="four-page" class="four-page">
+            <h2 class="title">Rate Me</h2>
+            <div class="form">
+                <form>
+                    <div>
+                        <label for="name_surname">Name & Surname <span>*</span></label>
+                        <input type="text" id="name_surname" name="name_surname">
+                    </div>
+
+                    <div>
+                        <label for="email">Email <span>*</span></label>
+                        <input type="email" name="email" id="email" placeholder="example@email.com">
+                    </div>
+
+                    <div>
+                        <label for="description">Description <span>*</span></label>
+                        <textarea name="description" id="description" style="font-size: 18px" cols="30" rows="10"
+                            placeholder="Write somethings.."></textarea>
+                    </div>
+
+                    <div>
+                        <button id="btn">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+        <div class="arrowUp">
+            <a href="#nav-menu"><img class="arrow" src="./Images/up-arrow.png"></a>
+        </div>
+
+    </main>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

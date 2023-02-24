@@ -1,0 +1,358 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url('./Images/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+/*NAV-MENU*/
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+.nav-list{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+    line-height: 3;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #03071e;
+    font-weight: 900;
+    font-size: 18px;
+    color: #E3874F;
+}
+
+.nav-link:hover{
+    color: #E3874F;
+}
+
+.nav-item{
+    border-top: 2px solid transparent;
+}
+
+.nav-item:hover, .active{
+    border-top: 2px solid #E3874F;
+    color: #E3874F;
+}
+
+/*MAIN*/
+.content{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 550px;
+    height: 92vh;
+}
+
+.blob{ 
+    display: flex;
+    justify-self: end;
+    width: 467.931884765625px;
+    height: 427.17596435546875px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg width=%22754.932%22 height=%22688.176%22 viewBox=%22159.578 103.929 754.932 688.176%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M854.5 648Q736 796 585 792t-314.5-53.5Q107 689 184.5 537T330 219.5q68-165.5 240-94t287.5 223Q973 500 854.5 648Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%23fdf9f6%22 d=%22M854.5 648Q736 796 585 792t-314.5-53.5Q107 689 184.5 537T330 219.5q68-165.5 240-94t287.5 223Q973 500 854.5 648Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+/*LOGO*/
+.logo{
+    text-align: center;
+    margin-right: 15px;
+}
+
+.logo > img{
+    width: 250px;
+    margin: auto;
+}
+
+.about-me{
+    margin-top: 80px;
+    margin-left: 45px;
+    width: 400px;
+}
+
+.about-me h1{
+    color: #009A9C;
+    font-size: 25px;
+    line-height: 2;
+    margin-left: 15px;
+}
+
+.about-me p{
+    color: #009A9C;
+    line-height: 2;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.about-me>#here{
+    font-size: 18px;
+    color: #E3874F;
+    font-weight: 500;
+}
+
+.about-me, #here, a{
+    text-decoration: none;
+    font-weight: 900;
+}
+
+/*COUNTDOWN*/
+.countdown-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.big-text{
+    font-size: 40px;
+    margin: 0 10px;
+    font-weight: 500;
+    color: #E3874F;
+}
+
+.countdown-el, span{
+    font-size: 20px;
+    color: #E3874F;
+}
+
+
+.countdown-el{
+    text-align: center;
+}
+
+/*SECOND PAGE*/
+/*BOX*/
+.second-page{
+    background-color: #fdf9f6;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 200px 600px;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 40px;
+    background: -webkit-linear-gradient(right, #fdf9f6, #009A9C);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.container-box{
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    justify-items: center;
+    
+}
+
+.box{
+    width: 360px;
+    height: 440px;
+    background: linear-gradient(360deg, rgba(3,7,30,1) 0%, rgba(0,154,156,1) 100%);
+    border: none;
+    border-radius: 25px;
+    align-self: center;
+    display: grid;
+    box-shadow: 0px 5px 10px 0px #03071e;
+    transition: 0.5s ease;
+    position: relative;
+}
+
+.box:hover{
+    box-shadow: 0px 10px 20px 2px #03071e;
+    transform: translateY(-5px);
+}
+
+.box .content-box>h3{
+    text-align: center;
+    margin-top: 180px;
+    color: #fdf9f6;
+    align-self: center;
+    rotate: -45deg;
+    font-size: 30px;
+}
+
+.icon>.el{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#message{
+    margin-top: 50px;
+    line-height: 3;
+    text-align: center;
+    display: none;
+    transition: 2s ease;
+    color: #fdf9f6;
+}
+
+
+/*THIRD PAGE*/
+.third-page{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #fdf9f6;
+}
+
+.images{
+    display: flex;
+}
+
+.third-page .images img{
+    width: 50%;
+    opacity: 0;
+    transition: all 2s ease;
+    margin: auto;
+}
+
+.third-page .images img.slideFromLeft{
+    transform: translateX(-100%);
+}
+
+.third-page .images img.slideFromRight{
+    transform: translateX(100%);
+}
+
+.third-page .images img.animated{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.border-line{
+    height: 3px;
+    width: 0;
+    background:linear-gradient(360deg, rgba(3,7,30,1) 0%, rgba(0,154,156,1) 100%);
+    transition: all 1s ease;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+/*four page*/
+.four-page{
+    height: 100vh;
+    background-color: #fdf9f6;
+    overflow: hidden;
+}
+
+.form h2{
+    text-align: center;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    margin: 40px auto 0;
+
+}
+
+form div{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+form div label{
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: left;
+    font-family: 'Rubik', sans-serif;
+    color: #888;
+    font-weight: 600;
+}
+
+form div input{
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #e2e2e2;
+    transition: 0.5s ease;
+    outline: none;
+}
+
+form div input:hover{
+    border-color: #E3874F;
+}
+
+form div textarea:hover{
+    outline: none;
+    border: 2px solid #E3874F;
+}
+
+form div textarea{
+    font-size: 18;
+    border-radius: 10px;
+    border: 2px solid #e2e2e2;
+    outline: none;
+}
+
+form div button{
+    width: 130px;
+    margin: 10px auto;
+    padding: 20px;
+    font-weight: 600;
+    border: 3px solid #E3874F;
+    border-radius: 20px;
+    transition: 0.1s ease-in;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+form div button:hover{
+    border-radius: 2px;
+    color: #E3874F;
+}
+
+.arrowUp{
+    position: fixed;
+    z-index: 2;
+    opacity: 1;
+    bottom: 60px;
+    right: 100px;
+}
+
+.arrowUp img{
+    width: 40px;
+    cursor: pointer;
+}
+
+form div label span{
+    color: #E3874F;
+}
+  

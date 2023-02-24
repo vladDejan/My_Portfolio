@@ -1,0 +1,262 @@
+/*FIRST PAGE*/
+@media (max-width: 1920px) {
+    .container-box {
+        display: grid;
+        gap: 0px;
+        grid-template-columns: repeat(3, 470px);
+    }
+}
+
+@media (max-width: 1366px) {
+    .content {
+        grid-template-columns: 300px 300px;
+        display: grid;
+        gap: 450px;
+    }
+
+    .container-box {
+        display: grid;
+        gap: 190px;
+        grid-template-columns: repeat(3, 257px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .content {
+        grid-template-columns: 300px 300px;
+        display: grid;
+        gap: 365px;
+    }
+
+    .container-box {
+        display: grid;
+        gap: 100px;
+        grid-template-columns: repeat(3, 205px);
+    }
+}
+
+@media (max-width: 992px) {
+    .content {
+        grid-template-columns: 300px 300px;
+        display: grid;
+        gap: 288px;
+    }
+
+    .container-box {
+        display: grid;
+        gap: 25px;
+        grid-template-columns: repeat(3, 280px);
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        display: grid;
+        gap: 246px;
+        grid-template: 300px 200px/ 430px;
+    }
+
+    .countdown-container:nth-child(1) {
+        gap: 20px;
+        order: 2;
+    }
+
+    .container-box {
+        display: grid;
+        gap: 0px;
+        grid-template-columns: repeat(3, 234px);
+        height: 500px;
+    }
+
+    .box {
+        width: 150px;
+        height: 300px;
+    }
+
+    .blob::nth-child(2) {
+        justify-self: center;
+        order: 1;
+    }
+
+    .blob {
+        margin: auto;
+    }
+}
+
+@media (max-width: 535px) {
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        z-index: 2;
+        position: fixed;
+        right: 10px;
+    }
+
+    .hamburger-menu .line {
+        width: 30px;
+        height: 3px;
+        background: #E3874F;
+        margin: 6px 0;
+    }
+
+    .nav-menu {
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: 0.2s;
+        height: 0;
+        background: #03071e;
+        overflow: hidden;
+    }
+
+    .nav-menu.active {
+        height: 100vh;
+        z-index: 1;
+    }
+
+    .nav-menu.active ul {
+        opacity: 1;
+    }
+
+    .nav-menu ul {
+        display: block;
+        width: fit-content;
+        margin: 0 auto 0 auto;
+        text-align: center;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .blob {
+        width: 442.931884765625px;
+    }
+
+    .nav-item:hover,
+    .active {
+        border: none;
+    }
+
+    .nav-item {
+        border: none;
+    }
+
+    .nav-item a {
+        color: #fdf9f6;
+    }
+}
+
+@media (max-width: 285px) {
+    main {
+        overflow: hidden;
+    }
+
+    .countdown-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .blob {
+        background-image: none;
+        width: 320px;
+        margin-top: 10px;
+    }
+
+    .blob .logo {
+        margin: auto;
+    }
+
+    .about-me {
+        margin: 30px 0 auto 0;
+        text-align: center;
+    }
+
+    .about-me p {
+        color: #03071e;
+        margin: 10px auto 0;
+        width: 250px;
+    }
+
+    .about-me p span {
+        color: #fdf9f6;
+    }
+
+    .about-me p span:hover {
+        color: #E3874F;
+    }
+
+    .about-me h1 {
+        color: #03071e;
+        margin: auto;
+    }
+
+    .second-page {
+        display: grid;
+        grid-template-rows: 50px 600px;
+    }
+
+    .logo-pattern .title {
+        font-size: 20px;
+        margin: 10px 0 auto 0;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .container-box {
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    .container-box .box {
+        padding: 10px;
+        width: 230px;
+        height: 246px;
+    }
+
+    .container-box .content-box .icon {
+        margin-top: 60px;
+    }
+
+    .content-box .hide {
+        margin-top: 2px;
+        line-height: normal;
+        font-size: 10px;
+    }
+
+    .content-box #message {
+        margin: auto;
+    }
+
+    .box:hover {
+        transform: none;
+    }
+
+    form div input {
+        width: 180px;
+        font-size: 15px;
+    }
+
+    form div label {
+        width: 180px;
+    }
+
+    form div textarea {
+        width: 180px;
+    }
+
+    .form form {
+        align-items: center;
+        display: flex;
+    }
+
+    .arrowUp {
+        opacity: 5;
+        bottom: 1px;
+        right: 5px;
+    }
+}
